@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='CandySearchUITests.xctest' tests='2' failures='0'>
+  <testsuite name='CandySearchUITests.CandySearchUITests' tests='2' failures='0'>
+    <testcase classname='CandySearchUITests.CandySearchUITests' name='testClearSearchField' time='2.882'/>
+    <testcase classname='CandySearchUITests.CandySearchUITests' name='testSearchFieldReturnsResult' time='3.773'/>
+  </testsuite>
+</testsuites>

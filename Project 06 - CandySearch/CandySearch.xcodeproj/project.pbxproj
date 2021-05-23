@@ -14,7 +14,21 @@
 		171E0C871B8E5B84001E6242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171E0C861B8E5B84001E6242 /* Assets.xcassets */; };
 		171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */; };
 		171E0CAE1B8E5C58001E6242 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E0CAD1B8E5C58001E6242 /* Candy.swift */; };
+		9296BC3C265A1AAF0084CC38 /* CandySearchUITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9296BC3B265A1AAF0084CC38 /* CandySearchUITestBase.swift */; };
+		9296BC3E265A3D730084CC38 /* CandySearchSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9296BC3D265A3D730084CC38 /* CandySearchSteps.swift */; };
+		9296BC40265A3D800084CC38 /* CandySearchElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9296BC3F265A3D800084CC38 /* CandySearchElements.swift */; };
+		92C9DD3426590D6D005949CB /* CandySearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C9DD3326590D6D005949CB /* CandySearchUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92C9DD3626590D6D005949CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 171E0C721B8E5B84001E6242 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 171E0C791B8E5B84001E6242;
+			remoteInfo = CandySearch;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		171E0C7A1B8E5B84001E6242 /* CandySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CandySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +40,23 @@
 		171E0C891B8E5B84001E6242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		171E0C8B1B8E5B84001E6242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		171E0CAD1B8E5C58001E6242 /* Candy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
+		9296BC3B265A1AAF0084CC38 /* CandySearchUITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandySearchUITestBase.swift; sourceTree = "<group>"; };
+		9296BC3D265A3D730084CC38 /* CandySearchSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandySearchSteps.swift; sourceTree = "<group>"; };
+		9296BC3F265A3D800084CC38 /* CandySearchElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandySearchElements.swift; sourceTree = "<group>"; };
+		92C9DD3126590D6D005949CB /* CandySearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CandySearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C9DD3326590D6D005949CB /* CandySearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandySearchUITests.swift; sourceTree = "<group>"; };
+		92C9DD3526590D6D005949CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		171E0C771B8E5B84001E6242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C9DD2E26590D6D005949CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				171E0C7C1B8E5B84001E6242 /* CandySearch */,
+				92C9DD3226590D6D005949CB /* CandySearchUITests */,
 				171E0C7B1B8E5B84001E6242 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				171E0C7A1B8E5B84001E6242 /* CandySearch.app */,
+				92C9DD3126590D6D005949CB /* CandySearchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +97,50 @@
 				171E0C8B1B8E5B84001E6242 /* Info.plist */,
 			);
 			path = CandySearch;
+			sourceTree = "<group>";
+		};
+		9296BC41265A3DC80084CC38 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9296BC3B265A1AAF0084CC38 /* CandySearchUITestBase.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9296BC42265A3DD30084CC38 /* XCUIElements */ = {
+			isa = PBXGroup;
+			children = (
+				9296BC3F265A3D800084CC38 /* CandySearchElements.swift */,
+			);
+			path = XCUIElements;
+			sourceTree = "<group>";
+		};
+		9296BC43265A3DDC0084CC38 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				9296BC3D265A3D730084CC38 /* CandySearchSteps.swift */,
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		9296BC44265A3DE10084CC38 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				92C9DD3326590D6D005949CB /* CandySearchUITests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		92C9DD3226590D6D005949CB /* CandySearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9296BC44265A3DE10084CC38 /* Tests */,
+				9296BC43265A3DDC0084CC38 /* Steps */,
+				9296BC42265A3DD30084CC38 /* XCUIElements */,
+				9296BC41265A3DC80084CC38 /* Base */,
+				92C9DD3526590D6D005949CB /* Info.plist */,
+			);
+			path = CandySearchUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,18 +163,43 @@
 			productReference = 171E0C7A1B8E5B84001E6242 /* CandySearch.app */;
 			productType = "com.apple.product-type.application";
 		};
+		92C9DD3026590D6D005949CB /* CandySearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92C9DD3826590D6E005949CB /* Build configuration list for PBXNativeTarget "CandySearchUITests" */;
+			buildPhases = (
+				92C9DD2D26590D6D005949CB /* Sources */,
+				92C9DD2E26590D6D005949CB /* Frameworks */,
+				92C9DD2F26590D6D005949CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92C9DD3726590D6D005949CB /* PBXTargetDependency */,
+			);
+			name = CandySearchUITests;
+			productName = CandySearchUITests;
+			productReference = 92C9DD3126590D6D005949CB /* CandySearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		171E0C721B8E5B84001E6242 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Peartree Developers";
 				TargetAttributes = {
 					171E0C791B8E5B84001E6242 = {
 						CreatedOnToolsVersion = 7.0;
 						LastSwiftMigration = 1020;
+					};
+					92C9DD3026590D6D005949CB = {
+						CreatedOnToolsVersion = 12.5;
+						DevelopmentTeam = 3SC4G2HYMY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 171E0C791B8E5B84001E6242;
 					};
 				};
 			};
@@ -119,6 +217,7 @@
 			projectRoot = "";
 			targets = (
 				171E0C791B8E5B84001E6242 /* CandySearch */,
+				92C9DD3026590D6D005949CB /* CandySearchUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +230,13 @@
 				171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */,
 				171E0C871B8E5B84001E6242 /* Assets.xcassets in Resources */,
 				171E0C851B8E5B84001E6242 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C9DD2F26590D6D005949CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +254,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92C9DD2D26590D6D005949CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9296BC3C265A1AAF0084CC38 /* CandySearchUITestBase.swift in Sources */,
+				92C9DD3426590D6D005949CB /* CandySearchUITests.swift in Sources */,
+				9296BC40265A3D800084CC38 /* CandySearchElements.swift in Sources */,
+				9296BC3E265A3D730084CC38 /* CandySearchSteps.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92C9DD3726590D6D005949CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 171E0C791B8E5B84001E6242 /* CandySearch */;
+			targetProxy = 92C9DD3626590D6D005949CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		171E0C831B8E5B84001E6242 /* Main.storyboard */ = {
@@ -193,6 +318,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -217,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -249,6 +375,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -267,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -300,6 +427,58 @@
 			};
 			name = Release;
 		};
+		92C9DD3926590D6E005949CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SC4G2HYMY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CandySearchUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.camern.CandySearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CandySearch;
+			};
+			name = Debug;
+		};
+		92C9DD3A26590D6E005949CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SC4G2HYMY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CandySearchUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.camern.CandySearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CandySearch;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +496,15 @@
 			buildConfigurations = (
 				171E0CA51B8E5B84001E6242 /* Debug */,
 				171E0CA61B8E5B84001E6242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92C9DD3826590D6E005949CB /* Build configuration list for PBXNativeTarget "CandySearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92C9DD3926590D6E005949CB /* Debug */,
+				92C9DD3A26590D6E005949CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
